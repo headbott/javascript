@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: black;
+            color: #ffffff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        // exercício que eu fiz sozinho, com base nos ensinamentos até a aula 6
+        
+        window.alert('Seja Bem vindo!')
+        var nome = window.prompt('Qual é o seu nome?')
+        var salario1 = Number.parseFloat(window.prompt('E o seu salário?'))
+        var salario2 = Number.parseFloat(window.prompt('E do seu sugundo emprego?'))
+        var s1 = salario1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var s2 = salario2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var soma = salario1 + salario2
+        var st = soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`Olá, ${nome} !<br/>`)
+        document.write(`Seu salário é de ${s1}.<br/>`)
+        document.write(`Seu segundo salário é de ${s2}.<br/>`)
+        document.write(`Sua renda total é de ${st}.`)
+    </script>
+</body>
+</html>
