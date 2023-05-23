@@ -11,7 +11,7 @@ function verificar() {
         var gênero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
-        if (fsex[0].checked) { // se o que tiver checado for o fsex 0
+        if (fsex[0].checked) { // se o que estiver checado for o fsex 0
             gênero = 'Homem'
             if (idade >=0 && idade < 13) {
                 // Criança
