@@ -13,14 +13,23 @@ function calcular() {
     } else {
         var ope = document.getElementsByName('operacao')
 
-        if (ope[0].checked) { // adição + se estiver checado
+        if (ope[0].checked) { // adição + estiver checado
             c = n1 + n2
             res.innerHTML = `O resultado da adição entre ${n1} e ${n2} é ${c}`
 
-        } else if (ope[1].checked) { // subtração - se estiver checado
+        } else if (ope[1].checked) { // subtração - estiver checado
             c = n1 - n2
             res.innerHTML = `O resultado da subtração entre ${n1} e ${n2} é ${c}`
+
+        } else if (ope[2].checked) { // multiplicação * estiver checado
+            c = n1 * n2
+            res.innerHTML = `O resultado da multiplicação entre ${n2} e ${n2} é ${c}`
+
+        } else if (ope[3].checked) { // divisão / estiver checado 
+            c = n1 / n2
+            res.innerHTML = `O resultado da divisão entre ${n1} e ${n2} é ${c}`
         }
+        // adicionar mais operações
     }
 
 
